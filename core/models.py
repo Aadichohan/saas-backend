@@ -26,7 +26,7 @@ class Subscription(models.Model):
     # Plan Configurations (Pricing & Limits)
     PLAN_DATA = {
         'Trial':   {'price': 0,    'text_limit': 100,    'call_limit': 0},
-        'Basic':   {'price': 49,   'text_limit': 2000,   'call_limit': 200},
+        'Basic':   {'price': 80,   'text_limit': 2000,   'call_limit': 200},
         'Advance': {'price': 149,  'text_limit': 10000,  'call_limit': 1000},
         'Pro':     {'price': 499,  'text_limit': 50000,  'call_limit': 5000},
     }
