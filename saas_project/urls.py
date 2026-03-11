@@ -4,7 +4,7 @@ from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
 )
-from django.http import JsonResponse, HttpResponsePermanentRedirect
+from django.http import JsonResponse, HttpResponseRedirect
 
 urlpatterns = [
     # path('', lambda request: JsonResponse({})),
