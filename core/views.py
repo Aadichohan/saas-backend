@@ -73,7 +73,8 @@ class DispatchView(APIView):
             'phone_id': subscription.business.phone_number_id,
         }
 
-        n8n_url = getattr(settings, 'N8N_WEBHOOK_URL', 'https://n8n.yourdomain.com/webhook/agent-dispatch')
+        # n8n_url = getattr(settings, 'N8N_WEBHOOK_URL', 'https://n8n.yourdomain.com/webhook/agent-dispatch')
+        n8n_url = getattr(settings, 'N8N_WEBHOOK_URL', 'http://localhost:5678/webhook-test/whatsapp-gateway')
 
         # Log Dispatch
         ChatLog.objects.create(
